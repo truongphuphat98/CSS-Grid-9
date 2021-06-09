@@ -1,0 +1,86 @@
+/*---------------------------------------------------*/
+body
+{
+    margin: 0;
+}
+/*---------------------------------------------------*/
+.container
+{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 100px;
+
+    gap: 10px;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+
+    height: 75vh;
+}
+
+.container div
+{
+    padding: 20px;
+    border: 2px solid black;
+}
+/*---------------------------------------------------*/
+.Header
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: aquamarine;
+}
+
+.Article
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 2;
+    grid-row-end: 7;
+    
+    background-color: bisque;
+}
+
+.Aside
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 7;
+    grid-row-end: 8;
+
+    background-color: brown;
+}
+
+.Nav
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 8;
+    grid-row-end: 9;
+
+    background-color: burlywood;
+}
+
+.Footer
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 9;
+    grid-row-end: 10;
+
+    background-color: chocolate;
+}
